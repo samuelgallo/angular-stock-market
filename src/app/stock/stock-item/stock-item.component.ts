@@ -6,6 +6,16 @@ import { Stock } from '../../model/stock';
   selector: 'app-stock-item',
   templateUrl: './stock-item.component.html',
   styleUrls: ['./stock-item.component.css'],
+  // styles: [
+  //   `
+  //     .stock-container {
+  //       border: 1px solid black;
+  //     }
+  //     .positive {
+  //       color: green;
+  //     }
+  //   `,
+  // ],
 })
 // @Component({
 //   selector: 'app-sock-item',
