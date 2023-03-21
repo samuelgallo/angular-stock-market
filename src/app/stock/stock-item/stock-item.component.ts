@@ -7,6 +7,22 @@ import { Stock } from '../../model/stock';
   templateUrl: './stock-item.component.html',
   styleUrls: ['./stock-item.component.css'],
 })
+// @Component({
+//   selector: 'app-sock-item',
+//   template: `<div class="stock-container">
+//     <div class="name">{{ stock.name + ' (' + stock.code + ' )' }}</div>
+//     <div
+//       class="price"
+//       [class]="stock.isPositiveChange() ? 'positive' : 'negative'"
+//     >
+//       $ {{ stock.price }}
+//     </div>
+//     <button (click)="toggleFavorite($event)" *ngIf="!stock.favorite">
+//       Add to Favorite
+//     </button>
+//   </div>`,
+//   styleUrls: ['./stock-item.component.css'],
+// })
 export class StockItemComponent implements OnInit {
   // public name!: string;
   // public code!: string;
