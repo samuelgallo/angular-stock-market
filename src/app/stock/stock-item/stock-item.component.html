@@ -30,10 +30,10 @@
   <!-- <button (click)="toggleFavorite($event)" *ngIf="!stock.favorite">Add to Favorite</button>
 </div> --> 
 
-<div class="stock-container" *ngFor="let stock of stocks; index as i; trackBy: trackStockByCode">
-  <div class="name">{{stock.name + ' ('+ stock.code+') '}}</div>
-  <div class="price" [class]="stock.isPositiveChange() ? 'positive' : 'negative' ">
-    $ {{stock.price}}
+<div class="stock-container">
+  <div class="name">{{stocks.name + ' ('+ stocks.code+') '}}</div>
+  <div class="price" [class]="stocks.isPositiveChange() ? 'positive' : 'negative' ">
+    $ {{stocks.price}}
   </div>
-  <button (click)="toggleFavorite($event, i)" [disabled]="stock.favorite">Add to Favorite</button>
+  <button (click)="onToggleFavorite($event)" [disabled]="stocks.favorite">Add to Favorite</button>
 </div>
